@@ -1,0 +1,268 @@
+.app-shell {
+  min-height: 100vh;
+  padding: 4px 24px 24px;
+}
+
+.library-header {
+  width: min(100%, 560px);
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.library-header h1 {
+  margin: 12px 0 6px;
+  color: #f0f0f0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.library-header p {
+  margin: 0 0 8px;
+  color: #e6e8ed;
+  font-size: 16px;
+}
+
+.library-nav {
+  font-size: 16px;
+}
+
+.library-nav__link {
+  color: #5b8def;
+  text-decoration: underline;
+}
+
+.library-nav__link--active {
+  color: #82aaff;
+  font-weight: 600;
+}
+
+.page-placeholder {
+  width: min(100%, 560px);
+  text-align: center;
+  color: #e6e8ed;
+}
+
+.office-save {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.office-save h2 {
+  margin: 0 0 12px;
+  color: #f0f0f0;
+  font-size: 26px;
+}
+
+.office-save__form {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.office-save__field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  width: 320px;
+  max-width: 100%;
+  color: #e6e8ed;
+}
+
+.office-save__field label {
+  white-space: nowrap;
+}
+
+.office-save__field input {
+  width: 195px;
+  height: 28px;
+  padding: 3px 7px;
+  border: 1px solid #909090;
+  border-radius: 2px;
+  background: #333;
+  color: #eee;
+}
+
+.office-save__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.office-save__actions button {
+  min-width: 70px;
+  padding: 3px 12px;
+  border: 1px solid #909090;
+  border-radius: 3px;
+  background: #8a8a8a;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.office-save__actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.office-save__message {
+  margin: 10px 0 0;
+  color: #7ee787;
+}
+
+.office-directory {
+  width: min(100%, 560px);
+}
+
+.office-directory h1 {
+  margin: 0 0 10px;
+  color: #f0f0f0;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.office-search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 11px;
+}
+
+.office-search input {
+  width: 209px;
+  max-width: calc(100% - 74px);
+  height: 35px;
+  padding: 6px 9px;
+  border: 1px solid #707070;
+  border-radius: 2px;
+  outline-offset: 2px;
+  background: #333;
+  color: #eee;
+}
+
+.office-search input::placeholder {
+  color: #858585;
+}
+
+.office-search button,
+.office-button,
+.office-error button {
+  border: 0;
+  border-radius: 2px;
+  background: #686868;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.office-search button {
+  min-height: 24px;
+  padding: 3px 11px;
+}
+
+.office-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.office-table {
+  width: 524px;
+  max-width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  color: #9daec2;
+}
+
+.office-table th,
+.office-table td {
+  border: 1px solid #55565b;
+  padding: 7px 8px;
+  text-align: center;
+}
+
+.office-table th {
+  color: #9daec2;
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.office-table td {
+  font-size: 18px;
+}
+
+.office-table th:nth-child(1),
+.office-table td:nth-child(1) {
+  width: 8%;
+}
+
+.office-table th:nth-child(2),
+.office-table td:nth-child(2) {
+  width: 31%;
+}
+
+.office-table th:nth-child(3),
+.office-table td:nth-child(3) {
+  width: 27%;
+}
+
+.office-table th:nth-child(4),
+.office-table td:nth-child(4) {
+  width: 34%;
+}
+
+.office-table__message {
+  text-align: left !important;
+}
+
+.office-actions {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.office-button {
+  padding: 4px 9px;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.office-button:disabled {
+  background: #363636;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.office-error {
+  color: #ff9a9a;
+}
+
+.office-error button {
+  padding: 4px 8px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  .app-shell {
+    padding: 12px 16px 24px;
+  }
+
+  .office-table {
+    min-width: 524px;
+  }
+}
